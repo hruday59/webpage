@@ -1,0 +1,62 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B.Tech PDF Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- MODE -->
+  <div id="modeSection" class="section">
+    <h2>Select Mode</h2>
+    <input type="password" id="adminPass" placeholder="Admin Password">
+    <div class="grid">
+      <button onclick="enterAdmin()">Admin</button>
+      <button onclick="enterStudent()">Student</button>
+    </div>
+  </div>
+
+  <!-- BRANCH -->
+  <div id="branchSection" class="section hidden">
+    <h2>Select Branch</h2>
+    <div class="grid">
+      <button onclick="selectBranch('ECE')">ECE</button>
+      <button onclick="selectBranch('CSE')">CSE</button>
+      <button onclick="selectBranch('EEE')">EEE</button>
+      <button onclick="selectBranch('Civil')">Civil</button>
+      <button onclick="selectBranch('Mechanical')">Mechanical</button>
+      <button onclick="selectBranch('Chemical')">Chemical</button>
+    </div>
+    <button class="back" onclick="goMode()">⬅ Back</button>
+  </div>
+
+  <!-- YEAR -->
+  <div id="yearSection" class="section hidden">
+    <h2 id="branchTitle"></h2>
+    <div class="grid">
+      <button onclick="selectYear('1')">1st Year</button>
+      <button onclick="selectYear('2')">2nd Year</button>
+      <button onclick="selectYear('3')">3rd Year</button>
+      <button onclick="selectYear('4')">4th Year</button>
+    </div>
+    <button class="back" onclick="goBranch()">⬅ Back</button>
+  </div>
+
+  <!-- PDF -->
+  <div id="pdfSection" class="section hidden">
+    <h2 id="yearTitle"></h2>
+
+    <input type="file" id="pdfInput" multiple accept="application/pdf">
+    <div id="pdfList" class="pdf-grid"></div>
+
+    <button class="back" onclick="goYear()">⬅ Back</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

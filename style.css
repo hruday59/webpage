@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg,#1d2671,#c33764);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  max-width: 650px;
+  background: rgba(0,0,0,0.35);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hidden { display: none; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+  gap: 12px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: #00ffd5;
+}
+
+button:hover { transform: scale(1.05); }
+
+.back {
+  background: #ff7675;
+  margin-top: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  border: none;
+  margin: 10px 0;
+}
+
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 10px;
+}
+
+.pdf-item {
+  background: rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pdf-item a {
+  color: #00ffd5;
+  display: block;
+  text-decoration: none;
+}
+
+.delete {
+  background: red;
+  color: white;
+  margin-top: 5px;
+  width: 100%;
+}
