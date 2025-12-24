@@ -35,6 +35,7 @@ function selectYear(y) {
   year = y;
   hideAll();
   document.getElementById("pdfSection").classList.remove("hidden");
+  document.getElementById("pdfViewSection").classList.remove("hidden");
   document.getElementById("yearTitle").innerText = branch + " - " + y + " Year PDFs";
   loadPDFs();
   document.getElementById("pdfInput").style.display =
